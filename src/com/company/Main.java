@@ -12,10 +12,21 @@ public class Main {
         int n;
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
-        for (int  i = 0; i<n;i++){
+        int i = 0;
+        do{
             arr.add(sc.nextInt());
             sum += arr.get(i);
-        }
+            i++;
+        } while (i<n);
+        /*while (i<n){
+            arr.add(sc.nextInt());
+            sum += arr.get(i);
+            i++;
+        }*/
+        /*for (int  i = 0; i<n;i++){
+            arr.add(sc.nextInt());
+            sum += arr.get(i);
+        }*/
 
         System.out.println(sum);
     }
